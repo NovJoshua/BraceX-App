@@ -1,0 +1,205 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Upper Circle Background -->
+    <View
+        android:id="@+id/upper_circle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/circle_background"
+        android:layout_alignParentTop="true" />
+
+    <!-- Dashboard Title -->
+    <TextView
+        android:id="@+id/dashboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BraceX"
+        android:textSize="29sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the joint you want to excercise"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="290dp" />
+
+    <!-- Card Grid -->
+    <GridLayout
+        android:id="@+id/card_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="16dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/upper_circle">
+
+
+
+
+
+        <!-- Card 1: Cyber Cell -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/cyber_cell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoulder"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Card 2: Hire Lawyer -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/hire_lawyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elbow"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Card 3: Complains -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/complains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrist"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Card 4: Emergency -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Knee"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Card 5: Timeline -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ankel"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Card 6: Marking -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/marking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicape"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nav_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</RelativeLayout>

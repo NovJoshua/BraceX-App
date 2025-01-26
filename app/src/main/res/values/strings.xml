@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BraceX</string>
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="signin_button">Sign In</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="invalid_email_or_password">Invalid email or password!</string>
+    <string name="login_successful">Login Successful!</string>
+    <string name="please_enter_email">Please enter your email</string>
+    <string name="please_enter_password">Please enter your password</string>
+    <string-array name="problems_list">
+        <item>Shoulder</item>
+        <item>Elbow</item>
+        <item>Wrist</item>
+        <item>Knee</item>
+        <item>Ankle</item>
+    </string-array>
+</resources>

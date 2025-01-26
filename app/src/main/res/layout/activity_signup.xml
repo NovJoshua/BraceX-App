@@ -1,0 +1,155 @@
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/main1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/app_logo1"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo"
+                android:contentDescription="App Logo" />
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/signup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BraceX Sign Up"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- First Name -->
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Middle Name -->
+            <EditText
+                android:id="@+id/middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Middle name"
+                android:inputType="textPersonName"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Last Name -->
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Create Password -->
+            <EditText
+                android:id="@+id/create_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create password"
+                android:inputType="textPassword"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Rewrite Password -->
+            <EditText
+                android:id="@+id/rewrite_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rewrite password"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Problem Dropdown -->
+            <Spinner
+                android:id="@+id/problem_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Doctor's Name (Optional) -->
+            <EditText
+                android:id="@+id/doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor's name (Optional)"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="20dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp" />
+            <!-- Sign In Link -->
+            <TextView
+                android:id="@+id/sign_in_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Login?"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,9 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#FFDD99"> <!-- Light ripple color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Card background -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</ripple>
